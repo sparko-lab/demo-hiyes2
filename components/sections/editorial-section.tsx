@@ -2,12 +2,12 @@
 
 import { useRef, useState, useEffect, useCallback } from "react";
 
-const specs = [
-  { label: "Surface Area", value: "180m²" },
-  { label: "Energy Use", value: "15 kWh/m²" },
-  { label: "Solar Panels", value: "40 m²" },
-  { label: "Carbon Balance", value: "-20%" },
-];
+// const specs = [
+//   { label: "Surface Area", value: "180m²" },
+//   { label: "Energy Use", value: "15 kWh/m²" },
+//   { label: "Solar Panels", value: "40 m²" },
+//   { label: "Carbon Balance", value: "-20%" },
+// ];
 
 export function EditorialSection() {
   const videoRef = useRef<HTMLDivElement>(null);
@@ -61,7 +61,6 @@ export function EditorialSection() {
       {/* Decorative Icons */}
       <div className="flex items-center justify-center gap-6 pb-20">
         
-        
       </div>
 
       {/* Full-width Video with Parallax */}
@@ -84,7 +83,7 @@ export function EditorialSection() {
       </div>
 
       {/* Specs Grid */}
-      <div className="grid grid-cols-2 border-t border-border md:grid-cols-4">
+      {/* <div className="grid grid-cols-2 border-t border-border md:grid-cols-4">
         {specs.map((spec) => (
           <div
             key={spec.label}
@@ -98,7 +97,7 @@ export function EditorialSection() {
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

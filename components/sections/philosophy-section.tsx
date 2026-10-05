@@ -151,7 +151,7 @@ export function PhilosophySection() {
       <div ref={descriptionRef} className="px-6 pt-8 md:px-12 md:pt-12 lg:px-20 lg:pt-16 ">
         <div className="text-center">
           
-          <p className="mt-8 leading-relaxed text-muted-foreground text-2xl text-center">
+          <p className="mt-8 leading-relaxed text-muted-foreground text-xl lg:text-3xl text-center">
             {("融合當代美學與前瞻工藝的居所提案").split(" ").map((word, index, array) => {
               const wordProgress = Math.max(0, Math.min(1, (descriptionProgress * array.length) - index));
               const opacity = wordProgress;
@@ -172,8 +172,8 @@ export function PhilosophySection() {
             })}
           </p>
 
-          <p className="mt-8 leading-relaxed text-muted-foreground text-2xl  text-center">
-            {("永續與極致舒適之間，為您預留生活最和諧的模樣。").split(" ").map((word, index, array) => {
+          <p className="mt-8 leading-relaxed text-muted-foreground text-xl lg:text-3xl text-center">
+            {("永續與極致舒適之間，為您預留生活最和諧的模樣").split(" ").map((word, index, array) => {
               const wordProgress = Math.max(0, Math.min(1, (descriptionProgress * array.length) - index));
               const opacity = wordProgress;
               const blur = (1 - wordProgress) * 40;
